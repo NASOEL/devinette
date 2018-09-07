@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>JEUX</title>
+</head>
+<body>
+    <script type="text/javascript">
+                var solution = Math.floor(Math.random() * 100) + 1;
+                for(var i=0 ; i>6 ; i++)
+                {
+                    var resultat = prompt('Veuillez saisir une valeur comprise entre 0 et 100');
+                    console.log(resultat);
+                    if(resultat == solution)
+                    {
+                        console.log('Félicitation la solution été bien:'+solution);
+                        break;
+                    }
+                    if(resultat!=solution)
+                    {
+                        if(resultat>solution)
+                        {
+                            console.log('Le chiffre entré est plus grand que la solution');
+                        }
+                        else
+                        {
+                            console.log('Le chiffre entré est plus petit que le solution');
+                        }
+                    }
+                }
+                if(i == 6)
+                {
+                    console.log('Game Over!!!');
+                }
+    </script>
+</body>
+</html>
